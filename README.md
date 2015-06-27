@@ -23,4 +23,10 @@ Read [here](https://docs.docker.com/installation/ubuntulinux/).
 (Guest OS) # docker run -d --name [container name] -p 80:80 [image tag]
 ```
 
+## Example
+
+```
+(Guest OS) # curl http://localhost:80
+Hello, Nginx!
+```
 
