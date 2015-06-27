@@ -10,7 +10,7 @@ ubunt 14.04(VurtialBox,Vagrant), Docker, CentOS 7, nginx
 $ git clone https://github.com/hirune525/work_docker.git
 $ vagrant up
 $ vagrant ssh
-(ubuntu) # cd /vagrant
+(Guest OS) # cd /vagrant
 ```
 
 ### Install Docker
@@ -19,8 +19,8 @@ Read [here](https://docs.docker.com/installation/ubuntulinux/).
 ### Docker run
 
 ```
-(ubuntu) # docker build -t rtbt/centos_app_env .
-(ubuntu) # docker run -d --name example-env -p 80:80 rtbt/centos_app_env
+(Guest OS) # docker build -t [image tag] .
+(Guest OS) # docker run -d --name [container name] -p 80:80 [image tag]
 ```
 
 
